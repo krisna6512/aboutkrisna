@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Krisna — Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Add a simple favicon if you want -->
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <!-- small hacker-ish SVG logo -->
+        <svg class="logo" viewBox="0 0 24 24" width="36" height="36" aria-hidden="true">
+          <rect x="1" y="1" width="22" height="22" rx="4" fill="none" stroke="currentColor" stroke-width="1.4"/>
+          <path d="M6 16c3-4 9-4 12 0" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <h1 class="name">Krisna Mandala Putra <span class="nick"> (Krisna)</span></h1>
+          <p class="role">Cybersecurity Enthusiast | Future CTF Champion</p>
+        </div>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <nav class="site-nav" id="siteNav">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills / Tools</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- LANDING / HOME -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h2 class="hero-title">Hi — saya <span class="accent">Krisna</span>.</h2>
+          <p class="hero-sub"> seorang pelajar yang sedang mendalami dunisa  cybersecurity. Passion di penetration testing, CTF, dan eksplorasi tools keamanan.</p>
+          <div class="hero-ctas">
+            <a href="#projects" class="btn primary">Lihat Project</a>
+            <a href="#contact" class="btn outline">Hubungi Saya</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="card stats-card">
+            <div class="stat">
+              <strong>CTF</strong>
+              <span class="muted">First solve: CTFlearn</span>
+            </div>
+            <div class="stat">
+              <strong>Tools</strong>
+              <span class="muted">Nmap • Wireshark • Metasploit</span>
+            </div>
+            <div class="stat">
+              <strong>OS</strong>
+              <span class="muted">Kali, Debian</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="card about-card">
+          <p>I am a vocational high school student majoring in Network Information Systems and Applications (SIJA), with a strong passion for cybersecurity. My focus is on understanding network security, penetration testing, and ethical hacking through school projects and self-study. I have hands-on experience with tools like Nmap, Wireshark, Ettercap, and Metasploit, and I actively practice through CTF challenges to sharpen my problem-solving and technical skills.</p>
+          <p>My goal is to continue growing as a cybersecurity enthusiast, gain more real-world experience, and contribute to building a safer digital environment for the future.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS / TOOLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills & Tools</h2>
+        <div class="tech-grid">
+          <div class="tech-col">
+            <h4>Reconnaissance</h4>
+            <ul>
+              <li><span class="icon">🔍</span>Nmap</li>
+              <li><span class="icon">🌐</span>Recon-ng</li>
+              <li><span class="icon">📂</span>Amass</li>
+            </ul>
+          </div>
+
+          <div class="tech-col">
+            <h4>Traffic Analysis</h4>
+            <ul>
+              <li><span class="icon">🛰️</span>Wireshark</li>
+              <li><span class="icon">🕵️</span>Ettercap</li>
+            </ul>
+          </div>
+
+          <div class="tech-col">
+            <h4>Exploitation</h4>
+            <ul>
+              <li><span class="icon">💣</span>Metasploit</li>
+              <li><span class="icon">⚙️</span>Burp Suite</li>
+            </ul>
+          </div>
+
+          <div class="tech-col">
+            <h4>Operating Systems</h4>
+            <ul>
+              <li><span class="icon">🐧</span>Kali Linux</li>
+              <li><span class="icon">🧷</span>Debian</li>
+              <li><span class="icon">🪟</span>Windows</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects / Experience</h2>
+        <div class="row">
+          <article class="card project">
+            <h3>CTF — Web Challenge (CTFlearn)</h3>
+            <p>Deskripsi singkat: menemukan LFI dan eskalasi sederhana. Menulis write-up tentang proses enumerasi dan exploit.</p>
+            <p class="muted">Tools: Burp, curl, browser devtools</p>
+          </article>
+
+          <article class="card project">
+            <h3>Script Bot Telegram</h3>
+            <p>Membuat bot sederhana untuk notifikasi hasil scan. Ditulis dengan Python (requests).</p>
+            <p class="muted">Repos: (link / private)</p>
+          </article>
+
+          <article class="card project">
+            <h3>Praktek Lab: MITM</h3>
+            <p>Praktik lab MITM di lingkungan terkontrol menggunakan Ettercap & Wireshark untuk pembelajaran traffic analysis.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="section">
+      <div class="container">
+        <h2>Achievements</h2>
+        <ul class="projects">
+          <li>Solve first CTF challenge on CTFlearn</li>
+          <li>Completed basic penetration testing mini-course</li>
+          <li>First public write-up: "Belajar IP Address"</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- BLOG / WRITE-UPS -->
+    <section id="blog" class="section">
+      <div class="container">
+        <h2>Blog / Write-up</h2>
+        <div class="card">
+          <p>Tempat catatan: contoh posting singkat untuk membantu pembaca memahami langkah-langkah praktis.</p>
+          <ol class="muted">
+            <li><strong>Belajar IP Address</strong> — dasar & subnetting</li>
+            <li><strong>Exploit sederhana di VirtualBox</strong> — lab controlled</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <div class="row">
+          <div class="card small">
+            <h3>Kontak</h3>
+            <p>Email: <a href="mailto:krisna@example.com" class="link">krisna@example.com</a></p>
+            <p>Telegram: <a href="https://t.me/yourhandle" class="link">@yourhandle</a></p>
+            <p class="muted">Atau gunakan form di samping untuk kirim pesan.</p>
+          </div>
+
+          <form id="contactForm" class="card form small" novalidate>
+            <label class="sr-only" for="name">Nama</label>
+            <input id="name" name="name" type="text" placeholder="Nama" required />
+
+            <label class="sr-only" for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="Email" required />
+
+            <label class="sr-only" for="message">Pesan</label>
+            <textarea id="message" name="message" rows="5" placeholder="Pesan" required></textarea>
+
+            <div class="form-row">
+              <button type="submit" class="btn primary">Kirim</button>
+              <button type="button" id="resetBtn" class="btn outline">Reset</button>
+            </div>
+
+            <p id="formFeedback" class="feedback" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Krisna Mandala Putra — Cybersecurity Portfolio</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
