@@ -1,226 +1,113 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Krisna Mandala Putra</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <!-- Header -->
-    <header class="header">
-      <h1 class="name">Krisna Mandala Putra</h1>
-      <p class="subtitle">krsna.ptraa • CyberSec enthusiast</p>
-      <p class="bio">
-        Currently focused on Cybersecurity, learning more about Penetration Testing, 
-        and exploring CTF challenges. Always curious and excited to keep growing in the field of ethical hacking.
-      </p>
-    </header>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="logo" href="index.html">@krsna.ptraa</a>
+      <button id="navToggle" class="nav-toggle">☰</button>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Navigation -->
-    <nav class="nav">
-      <ul class="nav-list">
-        <li><a href="#skills" class="nav-link active">Skills</a></li>
-        <li><a href="#tools" class="nav-link">Tools</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-    </nav>
+  <!-- Hero -->
+  <main class="container">
+    <section class="hero">
+      <h1 class="hero-title">Krisna Mandala Putra</h1>
+      <p class="subtitle">CyberSecurity Analyst | Aspiring Web Developer</p>
+      <p1 class="bio">
+        I'm passionate about cybersecurity with a focus on penetration testing and ethical hacking. Through CTF challenges and hands-on labs, I've been developing skills in vulnerability assessment and security research. Currently learning web programming to understand both sides of application security - how to build secure code and how to find weaknesses in it.
+      </p1>
+    </section>
 
-    <main>
-      <!-- Skills Section -->
-      <section id="skills" class="section">
-        <h2 class="section-title">Skills</h2>
-        
-        <div class="skills-category">
-          <h3 class="category-name">Networking</h3>
-          <div class="skills-list">
-            <span class="skill-tag">Subnetting</span>
-            <span class="skill-tag">IP Configuration</span>
-            <span class="skill-tag">Routing</span>
-            <span class="skill-tag">Network Analysis</span>
-          </div>
-        </div>
+<!-- Skill Sets -->
+<section class="skills-section">
+  <h2 class="section-title">Skill Sets</h2>
 
-        <div class="skills-category">
-          <h3 class="category-name">Cybersecurity</h3>
-          <div class="skills-list">
-            <span class="skill-tag">Penetration Testing</span>
-            <span class="skill-tag">CTF Challenges</span>
-            <span class="skill-tag">Vulnerability Assessment</span>
-            <span class="skill-tag">Web Security</span>
-          </div>
-        </div>
-
-        <div class="skills-category">
-          <h3 class="category-name">Programming</h3>
-          <div class="skills-list">
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">Bash Scripting</span>
-            <span class="skill-tag">Linux</span>
-            <span class="skill-tag">Git</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- Tools Section -->
-      <section id="tools" class="section">
-        <h2 class="section-title">Tools</h2>
-        
-        <div class="tools-category">
-          <h3 class="tools-category-title">Programming Language</h3>
-          <div class="tools-grid">
-            <div class="tool-item">
-              <div class="tool-icon">🐍</div>
-              <span class="tool-name">Python</span>
-            </div>
-            <div class="tool-item">
-              <div class="tool-icon">📜</div>
-              <span class="tool-name">Bash</span>
-            </div>
-            <div class="tool-item">
-              <div class="tool-icon">⚡</div>
-              <span class="tool-name">JavaScript</span>
-            </div>
-            <div class="tool-item">
-              <div class="tool-icon">🔷</div>
-              <span class="tool-name">PowerShell</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="tools-category">
-          <h3 class="tools-category-title">Cybersecurity Tools</h3>
-          <div class="tools-grid">
-            <div class="tool-item">
-              <div class="tool-icon">🔍</div>
-              <span class="tool-name">Nmap</span>
-            </div>
-            <div class="tool-item">
-              <div class="tool-icon">📈</div>
-              <span class="tool-name">Wireshark</span>
-            </div>
-            <div class="tool-item">
-              <div class="tool-icon">💣</div>
-              <span class="tool-name">Metasploit</span>
-            </div>
-            <div class="tool-item">
-              <div class="tool-icon">🛠</div>
-              <span class="tool-name">Burp Suite</span>
-            </div>
-            <div class="tool-item">
-              <div class="tool-icon">🕷️</div>
-              <span class="tool-name">Ettercap</span>
-            </div>
-            <div class="tool-item">
-              <div class="tool-icon">🌐</div>
-              <span class="tool-name">Recon-ng</span>
-            </div>
-            <div class="tool-item">
-              <div class="tool-icon">📊</div>
-              <span class="tool-name">Amass</span>
-            </div>
-            <div class="tool-item">
-              <div class="tool-icon">🔐</div>
-              <span class="tool-name">Hashcat</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="tools-category">
-          <h3 class="tools-category-title">Operating System</h3>
-          <div class="tools-grid">
-            <div class="tool-item">
-              <div class="tool-icon">🐉</div>
-              <span class="tool-name">Kali Linux</span>
-            </div>
-            <div class="tool-item">
-              <div class="tool-icon">🐧</div>
-              <span class="tool-name">Ubuntu</span>
-            </div>
-            <div class="tool-item">
-              <div class="tool-icon">🪟</div>
-              <span class="tool-name">Windows</span>
-            </div>
-            <div class="tool-item">
-              <div class="tool-icon">🖤</div>
-              <span class="tool-name">Debian</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Projects Section -->
-      <section id="projects" class="section">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-list">
-          <div class="project-item">
-            <h3 class="project-title">CTF Web Challenge Solver</h3>
-            <p class="project-description">
-              Menyelesaikan berbagai challenge CTF dengan fokus pada web exploitation, 
-              termasuk Local File Inclusion (LFI), SQL Injection, dan XSS attacks.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Python</span>
-              <span class="project-tag">Web Security</span>
-              <span class="project-tag">CTF</span>
-            </div>
-          </div>
-
-          <div class="project-item">
-            <h3 class="project-title">Telegram Security Bot</h3>
-            <p class="project-description">
-              Bot Telegram otomatis yang mengirimkan notifikasi hasil network scanning, 
-              vulnerability assessment, dan monitoring keamanan jaringan real-time.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Python</span>
-              <span class="project-tag">Telegram API</span>
-              <span class="project-tag">Network Security</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact Section -->
-      <section id="contact" class="section">
-        <h2 class="section-title">Contact</h2>
-        <p class="contact-info">
-          Tertarik untuk berkolaborasi dalam project cybersecurity atau ingin berdiskusi tentang 
-          penetration testing? Silakan hubungi saya melalui form di bawah ini.
-        </p>
-        
-        <form class="contact-form" id="contactForm">
-          <div class="form-group">
-            <label class="form-label" for="name">Nama</label>
-            <input type="text" id="name" class="form-input" required>
-          </div>
-          
-          <div class="form-group">
-            <label class="form-label" for="email">Email</label>
-            <input type="email" id="email" class="form-input" required>
-          </div>
-          
-          <div class="form-group">
-            <label class="form-label" for="message">Pesan</label>
-            <textarea id="message" class="form-input form-textarea" required></textarea>
-          </div>
-          
-          <div class="form-actions">
-            <button type="submit" class="btn btn-primary">Kirim Pesan</button>
-            <button type="reset" class="btn">Reset</button>
-          </div>
-        </form>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <p>&copy; <span id="currentYear">2024</span> Krisna Mandala Putra</p>
-    </footer>
+  <!-- Cyber Skills -->
+  <h3 class="sub-title">Cyber Skills</h3>
+  <div class="skill-items">
+    <div class="skill-item">🌐 Networking</div>
+    <div class="skill-item">🏆 CTF Challenges</div>
+    <div class="skill-item">🛠️ Penetration Testing</div>
+    <div class="skill-item">🔍 Vulnerability</div>
+    <div class="skill-item">💥 Exploit</div>
+    <div class="skill-item">📦 Payload</div>
+    <div class="skill-item">🩹 Remediation</div>
+    <div class="skill-item">📊 Attack Surface</div>
   </div>
+
+  <!-- Programming Languages -->
+  <h3 class="sub-title">Programming Languages</h3>
+  <div class="skill-items">
+    <div class="skill-item">💻 Powershell</div>
+    <div class="skill-item">📜 JavaScript</div>
+    <div class="skill-item">🗄️ SQL</div>
+    <div class="skill-item">🐹 Golang</div>
+    <div class="skill-item">🐍 Python</div>
+  </div>
+
+  <!-- Tools -->
+  <h3 class="sub-title">Tools</h3>
+  <div class="skill-items">
+    <div class="skill-item">🔎 Nmap</div>
+    <div class="skill-item">💣 Metasploit</div>
+    <div class="skill-item">🌐 Ettercap</div>
+    <div class="skill-item">📶 Wireshark</div>
+    <div class="skill-item">🛡️ Burp Suite</div>
+    <div class="skill-item">🔑 John the Ripper</div>
+  </div>
+
+  <!-- Operating Systems -->
+  <h3 class="sub-title">Operating Systems</h3>
+  <div class="skill-items">
+    <div class="skill-item">🐧 Linux</div>
+    <div class="skill-item">🖥️ Windows</div>
+    <div class="skill-item">📀 Debian</div>
+  </div>
+</section>
+
+
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+      <h2 class="section-title">Contact</h2>
+      <form id="contactForm" class="contact-form">
+        <div class="form-row">
+          <label for="name">Nama</label>
+          <input id="name" type="text" class="form-input" required />
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" type="email" class="form-input" required />
+        </div>
+        <div class="form-row">
+          <label for="message">Pesan</label>
+          <textarea id="message" class="form-input" rows="5" required></textarea>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Kirim</button>
+          <button type="reset" class="btn">Reset</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Krisna Mandala Putra</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
